@@ -1,4 +1,6 @@
 # MiniGroqqle: Lightweight Web Search for Python
+![image](https://github.com/user-attachments/assets/6f4ba625-7d9e-4383-b354-3c3c17b970e9)
+
 
 MiniGroqqle is a minimalist web search component that allows Python developers to easily integrate web search capabilities into their applications. With just a few lines of code, you can perform Google searches and retrieve structured results.
 
