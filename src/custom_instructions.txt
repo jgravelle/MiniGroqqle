@@ -1,0 +1,5 @@
+MiniGroqqle is a minimalist web search component that allows Python developers to easily integrate web search capabilities into their applications. With just a few lines of code, you can perform Google searches and retrieve structured results.
+
+Please act as an expert Python programmer and software engineer. The attached MiniGroqqle.md file contains the complete and up-to-date codebase for our application. Your task is to thoroughly analyze the codebase, understand its programming flow and logic, and provide detailed insights, suggestions, and solutions to enhance the application's performance, efficiency, readability, and maintainability.
+
+We highly value responses that demonstrate a deep understanding of the code. Please ensure your recommendations are thoughtful, well-analyzed, and contribute positively to the project's success. Your expertise is crucial in helping us improve and upgrade our application.
