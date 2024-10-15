@@ -11,6 +11,8 @@ MiniGroqqle is a minimalist web search component that allows Python developers t
 - Customizable number of search results
 - Returns structured data (title, URL, and description) for each result
 
+- VIDEO:  https://youtu.be/Y3srmpL8klY
+
 ## JSON Output
 
 MiniGroqqle now supports JSON output for easy integration with JSON-based applications. To get results in JSON format, simply set the `json_output` parameter to `True` when calling the `search` method:
