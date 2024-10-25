@@ -89,6 +89,58 @@ for result in results:
     print("---")
 ```
 
+## API Usage
+
+MiniGroqqle now includes an API endpoint to perform searches and return results in JSON format. The API is built using Flask and provides a `/search` endpoint that accepts a query parameter.
+
+### Running the API
+
+To run the API, first install the required dependencies:
+
+```bash
+pip install Flask
+```
+
+Then, create a file named `api.py` with the following content:
+
+```python
+from flask import Flask, request, jsonify
+from minigroqqle import MiniGroqqle
+
+app = Flask(__name__)
+
+@app.route('/search', methods=['GET'])
+def search():
+    query = request.args.get('query')
+    if not query:
+        return jsonify({"error": "Missing query parameter"}), 400
+
+    searcher = MiniGroqqle(num_results=5)
+    results = searcher.search(query, json_output=True)
+    return results
+
+if __name__ == '__main__':
+    app.run(debug=True)
+```
+
+To start the API, run the following command:
+
+```bash
+python api.py
+```
+
+The API will be available at `http://127.0.0.1:5000/search`.
+
+### Using the API
+
+To use the API, send a GET request to the `/search` endpoint with a `query` parameter. For example:
+
+```bash
+curl "http://127.0.0.1:5000/search?query=Python+programming"
+```
+
+The API will return the search results in JSON format.
+
 ## Contributing
 
 We welcome contributions to MiniGroqqle! Please feel free to submit issues, fork the repository and send pull requests!
